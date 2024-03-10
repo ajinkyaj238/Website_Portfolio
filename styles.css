@@ -1,0 +1,155 @@
+/* body {
+    background-color: #313338;
+    font-family: "Noto Sans", "Chivo", "Arial Narrow";
+}
+
+ul.topMenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #2b2d31;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -20px;
+}
+
+ul.topMenu li {
+    float: left;
+}
+
+ul.topMenu li a {
+    display: block;
+    color: lightgrey;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    transition: transform 0.1s ease-in-out;
+}
+
+ul.topMenu li a:hover {
+    background-color: #313338;
+    border-radius: 10px;
+    transform: scale(1.3);
+}
+
+ul.topMenu li a {
+    font-family: "Chivo";
+}
+
+h1 {
+    font-size: 48px;
+    font-family: "Noto Sans";
+    color: white;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+} */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans", "Chivo", "Arial Narrow", "Dancing Script";
+}
+
+body{
+    background-color: #313338;
+    min-height : 100vh; 
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 50px;
+    display: flex;
+    /* background-color: #313338; */
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100; 
+    color: white;   
+}
+
+header .name{
+    font-size: 1.5em;
+    color: white;
+    user-select: none; 
+    
+}
+
+header .navigation a{
+    text-shadow: 0 0 10px #000;
+    font-size: 0.9em;
+    color: white;
+    font-weight: 600;
+    text-decoration: none; 
+    margin-left: 10px;
+    padding: 5px 8px;
+    /* background: #2b2d31; */
+    transition: all 0.3s ease;
+}
+
+header .navigation a:hover{
+    font-size: 1.3em;
+    background: #2b2d31;
+    border-radius: 15px;
+    transform: scale(1.5);
+}
+
+.parallax{
+    position: relative;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('deformable_mirror.jpg') no-repeat center center/cover;
+    background-position: center; 
+    background-attachment: fixed;
+}
+
+#text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; 
+    font-size: 4em;
+    font-family: "Dancing Script";
+    text-align: center;
+    font-weight: 600;
+    text-shadow: 0 0 10px #000;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Set the height of the container to full viewport height */
+}
+
+.about-box {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-box h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.about-box p {
+    font-size: 16px;
+    line-height: 1.5;
+}
