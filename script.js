@@ -39,6 +39,8 @@ setInterval(updateParallaxText, 5000);
 
 
 
+
+
 /* This section of code was meant to emulate a typing effect. But it was not working as intended. Helped me learn javascript though. */
 // const texts = ['Hello!', '您好!', '¡Hola!', 'नमस्कार!', '!مرحبًا', '안녕하세요!', '!שלום', 'Hallo!', 'こんにちは!', 'สวัสดีครับ!', 'Bonjour!']
 
