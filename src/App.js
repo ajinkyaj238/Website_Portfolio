@@ -129,6 +129,9 @@ function App() {
 
   return (
     <div className="Ajinkya's_Website">
+
+
+
       <header>
         <a href="https://github.com/ajinkyaj238" target="_blank" rel="noopener noreferrer">
           <i className="fab fa-github"></i>
@@ -137,13 +140,16 @@ function App() {
           <i className="fab fa-linkedin"></i>
         </a>
       </header>
+
+
+      
       <div className="Front-Website-Header">
         <p>Hi, I'm Ajinkya Joshi! <span className="wave">👋</span></p>
         <p className="main-subtext1">I'm a combined Electrical and Computer Engineering Senior at Northeastern University</p>
         <p className="main-subtext2">From optimizing production software and workflows in a clean room.</p>
         <p className="main-subtext3">To analyzing sectoral stress in financial intermediaries.</p>
         <p className="main-subtext4">I specialize in solving complex engineering problems within interdisciplinary environments.</p>
-        <p className="main-subtext5">Continue down to view my portfolio</p>
+        <p className="main-subtext5">Continue ahead to learn more about me!</p>
         <Link to="skills" smooth={true} duration={500}>
           <i className="fas fa-arrow-down arrow"></i> {/* Downward pointing arrow icon */}
         </Link>
@@ -152,10 +158,12 @@ function App() {
 
       <Element name="skills" className="full-screen-section" id="skills-section">
         <h2 style={{ textAlign: 'center' }}>SKILLS</h2>
-        <div className="skills-container">
+        <div>
           <SkillsPage />
         </div>
       </Element>
+
+
     </div>
   );
 }

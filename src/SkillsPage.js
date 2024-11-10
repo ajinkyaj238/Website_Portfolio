@@ -1,11 +1,28 @@
-import React from 'react';
-import './SkillsPage.css'; // Create this CSS file for styling
+import React, { useEffect, useRef } from 'react';
+import './SkillsPage.css'; // Ensure your CSS is imported
 
 const SkillsPage = () => {
+    const skillsRef = useRef([]);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            skillsRef.current.forEach((box, index) => {
+                if (box && box.getBoundingClientRect().top < window.innerHeight) {
+                    setTimeout(() => {
+                        box.classList.add('show');
+                    }, index * 200); // Delay each box by 200ms
+                }
+            });
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
     const skillsData = [
         {
             title: 'Software',
-            items: ['C', 'C++', 'Python', 'SystemVerilog', 'Assembly', 'MetroScript', 'SQL', 'Java', 'Latex', 'HLS']
+            items: ['C', 'C++', 'Python', 'SystemVerilog', 'Assembly', 'MetroScript', 'Java', 'Latex', 'HLS']
         },
         {
             title: 'Data',
@@ -24,7 +41,11 @@ const SkillsPage = () => {
     return (
         <div className="skills-container">
             {skillsData.map((section, index) => (
-                <div className="skills-box" key={index}>
+                <div
+                    className="skills-box"
+                    key={index}
+                    ref={(el) => (skillsRef.current[index] = el)}
+                >
                     <h3>{section.title}</h3>
                     <ul>
                         {section.items.map((item, i) => (
@@ -38,4 +59,3 @@ const SkillsPage = () => {
 };
 
 export default SkillsPage;
-

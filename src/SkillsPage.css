@@ -1,43 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:wght@400&display=swap');
+
+
 .skills-container {
     display: flex;
     justify-content: space-between;
     gap: 20px;
     flex-wrap: wrap; /* Ensures responsive wrapping */
+    align-items: stretch; /* Aligns items to have the same height */
+    width: 100%; /* Full container width */
 }
 
 .skills-box {
-    background-color: #f8f9fc; /* Light gray background */
+    background-color: #f8f9fc;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    flex: 1;
-    min-width: 250px; /* Ensures a minimum width */
     text-align: left;
-    margin-bottom: 20px; /* Adds space between rows */
+    opacity: 0; /* Initially hidden */
+    transform: translateY(20px); /* Initial position for sliding effect */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Animation properties */
+    flex: 1 1 250px; /* Flexible grow/shrink, with a base width */
+    min-width: 250px; /* Ensures a minimum width for each box */
+    max-width: 300px; /* Optional: caps the maximum width */
+    min-height: 350px; /* Consistent minimum height for all boxes */
+    display: flex;
+    flex-direction: column; /* Aligns content vertically */
+    align-items: flex-start; /* Aligns content to the left */
+    justify-content: flex-start; /* Ensures content starts from the top */
 }
+
+
+.skills-box.show {
+    opacity: 1; /* Visible */
+    transform: translateY(0); /* Slide to original position */
+}
+
+
+.skills-box:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+    transform: translateY(-5px); /* Slightly lift the box on hover */
+}
+
+
 
 .skills-box h3 {
     font-size: 16px;
     text-transform: uppercase;
-    margin-bottom: 15px;
+    margin-bottom: 5px; /* Reduce bottom margin to decrease spacing */
     font-weight: bold;
+    font-family: 'Google Sans', sans-serif;
 }
 
 .skills-box ul {
     list-style-type: none;
     padding: 0;
+    margin: 0; /* Remove default margin */
+    width: 100%; /* Ensure it takes full width */
+    font-family: 'Google Sans', sans-serif;
 }
 
 .skills-box li {
-    margin-bottom: 10px;
+    margin-bottom: 8px; /* Reduce margin between items */
     font-size: 14px;
+    font-family: 'Google Sans', sans-serif;
 }
+
 
 .skills-box li a {
     color: #e74c3c; /* Red color for clickable items */
     text-decoration: none;
+    font-family: 'Google Sans', sans-serif;
 }
+
 
 .skills-box li a:hover {
     text-decoration: underline;
+}
+
+
+@media (max-width: 600px) {
+    .skills-container {
+        grid-template-columns: 1fr; /* Single column for small screens */
+    }
 }
