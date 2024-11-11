@@ -26,7 +26,7 @@ const SkillsPage = () => {
         },
         {
             title: 'Data',
-            items: ['Pandas', 'Numpy', 'Scipy', 'Qt', 'SQL']
+            items: ['Matlab', 'Pandas', 'Numpy', 'Scipy', 'Qt', 'SQL']
         },
         {
             title: 'Tools',
@@ -41,21 +41,25 @@ const SkillsPage = () => {
     return (
         <div className="skills-container">
             {skillsData.map((section, index) => (
-                <div
-                    className="skills-box"
-                    key={index}
-                    ref={(el) => (skillsRef.current[index] = el)}
-                >
-                    <h3>{section.title}</h3>
-                    <ul>
-                        {section.items.map((item, i) => (
-                            <li key={i}>{item}</li>
+                <div className="skills-box" key={index} ref={(el) => (skillsRef.current[index] = el)}>
+                    <h3 className="skills-title">{section.title}</h3>
+                    <ul>{section.items.map((item, i) => (
+                            <li className="skills-item" key={i}>{item}</li>
                         ))}
                     </ul>
                 </div>
             ))}
         </div>
     );
+
+
+
+
+
+
+
+
+
 };
 
 export default SkillsPage;

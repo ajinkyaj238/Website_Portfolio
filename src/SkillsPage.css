@@ -8,10 +8,11 @@
     flex-wrap: wrap; /* Ensures responsive wrapping */
     align-items: stretch; /* Aligns items to have the same height */
     width: 100%; /* Full container width */
+    color: white;
 }
 
 .skills-box {
-    background-color: #f8f9fc;
+    background-color: #0a0a0d;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -41,6 +42,20 @@
     transform: translateY(-5px); /* Slightly lift the box on hover */
 }
 
+
+.skills-title {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: white; /* Red color for the title */
+}
+  
+.skills-item {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: whitesmoke; /* Blue color for the items */
+}
 
 
 .skills-box h3 {

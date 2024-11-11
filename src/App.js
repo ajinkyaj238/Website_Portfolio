@@ -3,6 +3,16 @@ import './App.css';
 import { Link, Element } from 'react-scroll';
 import SkillsPage from './SkillsPage';
 
+
+
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import ProjectsPage from './ProjectsPage';
+import ProjectOne from './Projects/ProjectOne';
+import ProjectTwo from './Projects/ProjectTwo';
+import ProjectThree from './Projects/ProjectThree';
+
+
+
 function App() {
   useEffect(() => {
     // Firework setup code (unchanged)
@@ -156,11 +166,29 @@ function App() {
         <div id="board"></div>
       </div>
 
-      <Element name="skills" className="full-screen-section" id="skills-section">
-        <h2 style={{ textAlign: 'center' }}>SKILLS</h2>
-        <div>
+
+
+
+      <Element name="skills" className="full-screen-section" id="skills-section" style={{ backgroundColor: '#141414' }}>
+        <h2 style={{ textAlign: 'center', color: 'white'}}>SKILLS</h2>
+        <div
+          style={{ backgroundColor: "#141414"}}
+        >
           <SkillsPage />
         </div>
+      </Element>
+
+
+      <Element name="Projects" className="full-screen-section" id="projects-section">
+        <h2 style={{ textAlign: 'center' }}>Projects</h2>
+        <Router>
+          <Routes>
+            <Route path="/" element={<ProjectsPage />} />
+            <Route path="/project-one" element={<ProjectOne />} />
+            <Route path="/project-two" element={<ProjectTwo />} />
+            <Route path="/project-three" element={<ProjectThree />} />
+          </Routes>
+        </Router>
       </Element>
 
 
