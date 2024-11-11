@@ -179,6 +179,9 @@ function App() {
       </Element>
 
 
+
+
+
       <Element name="Projects" className="full-screen-section" id="projects-section">
         <h2 style={{ textAlign: 'center' }}>Projects</h2>
         <Router>
