@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import './App.css';
 import { Link, Element } from 'react-scroll';
 import SkillsPage from './SkillsPage';
+import AboutPage from './AboutPage';
 
 
 
@@ -160,11 +161,20 @@ function App() {
         <p className="main-subtext3">To analyzing sectoral stress in financial intermediaries.</p>
         <p className="main-subtext4">I specialize in solving complex engineering problems within interdisciplinary environments.</p>
         <p className="main-subtext5">Continue ahead to learn more about me!</p>
-        <Link to="skills" smooth={true} duration={500}>
+        <Link to="about" smooth={true} duration={500}>
           <i className="fas fa-arrow-down arrow"></i> {/* Downward pointing arrow icon */}
         </Link>
         <div id="board"></div>
       </div>
+
+
+
+      <Element name="about" className="full-screen-section" id="skills-section" style={{ backgroundColor: '#141414' }}>
+        <div>
+          <AboutPage />
+        </div>
+      </Element>
+
 
 
 
@@ -193,6 +203,9 @@ function App() {
           </Routes>
         </Router>
       </Element>
+
+
+
 
 
     </div>
