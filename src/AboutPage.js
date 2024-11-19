@@ -47,7 +47,7 @@ const AboutPage = () => {
                     <strong>Interests:</strong> Hardware and Software Design, Semiconductors and Micromachining, Signal Processing and Analysis<br />
                     <strong>Extracurriculars:</strong> Northeastern IEEE Treasurer. 
                 </p>
-                <img src="/Images/northeastern_logo.png" alt="Northeastern" className="education-image"/>
+                <img src="Images/northeastern_logo.jpg" alt="Northeastern" className="education-image"/>
             </section>
         </div>
     );

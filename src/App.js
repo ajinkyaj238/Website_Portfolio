@@ -192,7 +192,7 @@ function App() {
 
 
 
-      <Element name="Projects" className="full-screen-section" id="projects-section">
+      <Element name="Projects (Being updated)" className="full-screen-section" id="projects-section">
         <h2 style={{ textAlign: 'center' }}>Projects</h2>
         <Router>
           <Routes>
