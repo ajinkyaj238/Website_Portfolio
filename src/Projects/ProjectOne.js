@@ -4,7 +4,7 @@ const ProjectOne = () => {
     return (
         <div className="project-detail">
             <h1>Project One</h1>
-            <p>Details about Project One...</p>
+            <p>test</p>
             {/* Add more content as needed */}
         </div>
     );

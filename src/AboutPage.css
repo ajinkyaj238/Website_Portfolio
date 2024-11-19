@@ -52,11 +52,8 @@
 
 .education-image {
     display: block;
-    margin: 20px auto 0;
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto 0; /* Center the image and add space above */
+    max-width: 30%; /* Ensure the image does not exceed the container width */
 }
 
 

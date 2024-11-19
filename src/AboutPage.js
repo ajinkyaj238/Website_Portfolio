@@ -25,19 +25,20 @@ const AboutPage = () => {
 
     return (
         <div className="about-page">
-            <section className="about-me" ref={aboutMeRef}>
+            <div className="about-me" ref={aboutMeRef}>
                 <h2 style={{textAlign: "center"}}>A little more about me:</h2>
                 <p style={{textAlign: "justify"}}>
-                    Growing up in Singapore, I loved playing video games and spent countless hours researching about the best CPU's and GPU's to build the build the best gaming PC. 
-                    When I finally was able to build it, I seemed more interested in the process of learning more about computer hardware than playing the games.
-                    This led me to pursue Electrical and Computer Engineering at Northeastern.
-                    As an ECE major, I have been exposed to many different subfields that require the development of a wide range of skills. In terms of relevance, these skills include C/C++ for hardware/software co-design, along with Python and MATLAB in data-driven engineering.
-                    Over the years I have worked on and developed many projects that have helped me develop a strong foundation in both hardware and software design. You can take a look at some of my skills and projects if you scroll down. 
-                    Having said that, the biggest skill I've learned is the ability to learn and learn to new technologies and concepts quickly and being able to apply them in any project I work on. <br /><br />
-                    <strong>There is no technical skill that I cannot learn and apply to a project. It all comes down to the project that I work on and what would be the most efficient tool I can use to get the job done.</strong>
+                Growing up in Singapore, I loved playing video games and spent countless hours researching the best CPUs and GPUs to build the ultimate gaming PC. 
+                When I finally managed to build it, I realized I was more interested in the process of learning about computer hardware than playing the games. 
+                This curiosity led me to pursue Electrical and Computer Engineering at Northeastern University.
+                As an ECE major, I have been exposed to many different subfields that require the development of a wide range of skills. 
+                These include C/C++ for hardware/software co-design, along with Python and MATLAB for data-driven engineering. Over the years, I have worked on and developed numerous projects that have helped me build a strong foundation in both hardware and software design. 
+                You can take a look at some of my skills and projects by scrolling down.
+                That said, the most valuable skill I've developed is the ability to quickly learn new technologies and concepts and apply them effectively to any project I undertake. <br /><br />
+                <strong>There is no technical skill that I cannot learn and apply to a project. It all comes down to the project that I work on and what would be the most efficient tool I can use to get the job done.</strong>
                 </p>
-            </section>
-            <section className="education" ref={educationRef}>
+            </div>
+            <div className="education" ref={educationRef}>
                 <h2 style={{textAlign: "center"}}>Technical stuff:</h2>
                 <p style={{textAlign: "justify"}}>
                     <strong>Northeastern University</strong> - Boston, MA<br />
@@ -47,10 +48,10 @@ const AboutPage = () => {
                     <strong>Interests:</strong> Hardware and Software Design, Semiconductors and Micromachining, Signal Processing and Analysis<br />
                     <strong>Extracurriculars:</strong> Northeastern IEEE Treasurer. 
                 </p>
-                <img src="Images/northeastern_logo.jpg" alt="Northeastern" className="education-image"/>
-            </section>
+                <img src="Images/northeastern_logo.png" alt="" className="education-image" />
+            </div>
         </div>
     );
 };
 
-export default AboutPage;
+export default AboutPage; 
