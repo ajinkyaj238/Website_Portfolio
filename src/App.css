@@ -6,7 +6,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
 .Front-Website-Header {
   background-color:  #001126;
   min-height: 100vh;
@@ -18,7 +17,6 @@ html {
   color: white;
   font-family: 'Google Sans', sans-serif;
 }
-
 
 /* Subtext fade in effect */
 .main-subtext1 {
@@ -90,39 +88,68 @@ html {
   }
 }
 
-
-/* Icon Headers */
 header {
-  display: flex;
-  justify-content: flex-start;
-  padding: 10px;
-  background-color: transparent; /* Adjust the background color as needed */
-  position: fixed; /* Fix the header at the top */
-  top: 0;
-  width: 100%;
-  z-index: 1000; /* Ensure the header is above other content */
+  position: fixed; /* Keep the header at the top */
+  top: 0; /* Align at the top */
+  left: 0; /* Start from the left edge */
+  width: 98%; /* Full width */
+  z-index: 1000; /* Keep it above all other elements */
+  margin: 0; /* Remove any default margins */
+  padding: 10px 20px; /* Add consistent padding */
+  background-color: transparent; /* Fully transparent header */
+  border: none; /* Remove any borders */
+  box-shadow: none; /* Remove shadow for blending */
+  display: flex; /* Flex layout for alignment */
+  justify-content: space-between; /* Space out items */
+  align-items: center; /* Center items vertically */
 }
 
-header a {
-  color: black; /* Adjust the icon color as needed */
-  margin-left: 10px;
-  font-size: 30px; /* Adjust the icon size as needed */
+/* Header Links */
+header div > a {
+  display: inline-block; /* Ensure the box effect applies */
+  padding: 10px 15px; /* Add padding to create the box */
+  border: 2px solid black; /* Add a border to the box */
+  border-radius: 8px; /* Optional: round the corners */
+  background-color: white; /* Background is transparent by default */
+  color: black; /* Icon or text color */
+  text-align: center;
   text-decoration: none;
-  text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff; /* White glowing effect */
+  transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
 }
 
-header a:hover {
-  color: #ffcc00; /* Adjust the hover color as needed */
+header div > a:hover {
+  background-color: #ffcc00; /* Change background color on hover */
+  color: #001126; /* Change text or icon color on hover */
+  transform: scale(1.1); /* Slightly enlarge the box */
+  box-shadow: 0 4px 10px rgba(255, 204, 0, 0.6); /* Add a glow effect */
 }
 
+/* For React Links */
+header div > .link {
+  display: inline-block; /* Ensure the box effect applies */
+  padding: 10px 15px; /* Add padding to create the box */
+  border: 2px solid white; /* Add a border to the box */
+  border-radius: 8px; /* Optional: round the corners */
+  background-color: transparent; /* Background is transparent by default */
+  color: white; /* Text color */
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+}
+
+header div > .link:hover {
+  background-color: #ffcc00; /* Change background color on hover */
+  color: #001126; /* Change text color on hover */
+  transform: scale(1.1); /* Slightly enlarge the box */
+  box-shadow: 0 4px 10px rgba(255, 204, 0, 0.6); /* Add a glow effect */
+}
+
+
+/* Styling for body */
 body {
   padding-top: 50px; /* Adjust the padding to match the header height */
   background-color: #001126;
 }
-
-
-
-
 
 .full-screen-section {
   height: 100vh; /* Full viewport height */
@@ -133,8 +160,6 @@ body {
   background-color: #f0f0f0; /* Adjust the background color as needed */
   padding: 20px;
 }
-
-
 
 /* Waving hand effect (credits: Jake Jarvis from CodePen.io) */
 .wave {

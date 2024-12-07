@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:wght@400&display=swap');
+
+/* Make the section full width with a dark purple background */
+.jobs-section {
+    width: 100%; /* Occupy the full width of the screen */
+    min-height: 100vh; /* Ensure it takes up the full height of the viewport */
+    padding: 40px 20px;
+    background-color: #1a0024; /* Dark purple background */
+    color: #fff;
+    box-sizing: border-box; /* Include padding in width calculation */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack job entries vertically */
+    align-items: center; /* Center-align content horizontally */
+    padding: 120px; /* Add separation between the container and screen edges */
+}
+
+/* Job entry boxes with dynamic width */
+.job-entry {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: rgba(44, 0, 62, 0.8); /* Semi-transparent dark purple */
+    color: #fff; /* White text color for contrast */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Shadow for depth */
+    width: fit-content; /* Adjust width based on content */
+    max-width: 80%; /* Limit width to 80% of parent container */
+    position: relative;
+    align-self: flex-start; /* Default alignment to the left */
+    opacity: 0; /* Fully transparent */
+    transform: translateY(20px); /* Move slightly downward */
+    transition: opacity 0.8s ease, transform 0.8s ease; /* Smooth transition */
+}
+
+/* Visible state for job entries */
+.job-entry.show {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Reset position */
+}
+
+/* Alternate alignment for job entries */
+.job-entry:nth-child(odd) {
+    align-self: flex-start; /* Align odd entries to the left */
+    text-align: left; /* Align text to the left */
+}
+
+.job-entry:nth-child(even) {
+    align-self: flex-end; /* Align even entries to the right */
+    text-align: right; /* Align text to the right */
+}
+
+/* Center align job section title */
+.jobs-section h2 {
+    text-align: center;
+    color: #ffd700; /* Gold color for the title */
+    margin-bottom: 30px;
+    font-family: 'Google Sans', sans-serif; /* Apply Google Sans font */
+}
+
+/* Style for job entry headings */
+.job-entry h3 {
+    margin-top: 0;
+    color: #ffd700; /* Gold color for company names */
+    font-family: 'Google Sans', sans-serif; /* Apply Google Sans font */
+}
+
+.job-entry p {
+    margin: 5px 0;
+    font-family: 'Google Sans', sans-serif; /* Apply Google Sans font */
+}
+
+/* Add responsiveness for smaller screens */
+@media (max-width: 768px) {
+    .job-entry {
+        width: 100%; /* Full width on smaller screens */
+        margin-bottom: 20px;
+    }
+
+    .job-entry:nth-child(odd),
+    .job-entry:nth-child(even) {
+        align-self: center; /* Center-align all entries on small screens */
+        text-align: center; /* Center-align text on small screens */
+    }
+}

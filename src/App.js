@@ -3,8 +3,7 @@ import './App.css';
 import { Link, Element } from 'react-scroll';
 import SkillsPage from './SkillsPage';
 import AboutPage from './AboutPage';
-
-
+import JobsSection from './JobsSection'; // Import the JobsSection component
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ProjectsPage from './ProjectsPage';
@@ -144,12 +143,20 @@ function App() {
 
 
       <header>
-        <a href="https://github.com/ajinkyaj238" target="_blank" rel="noopener noreferrer">
-          <i className="fab fa-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/ajinkya-joshi-01b1a8246/" target="_blank" rel="noopener noreferrer">
-          <i className="fab fa-linkedin"></i>
-        </a>
+        <div>
+          <a href="https://github.com/ajinkyaj238" target="_blank" rel="noopener noreferrer">
+            <i className="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/ajinkya-joshi-01b1a8246/" target="_blank" rel="noopener noreferrer">
+            <i className="fab fa-linkedin"></i>
+          </a>
+        </div>
+        <div>
+          <Link to="about" smooth={true} duration={500}>Me</Link>
+          <Link to="skills" smooth={true} duration={500}>Skills</Link>
+          <Link to="work-experience" smooth={true} duration={500}>Experience</Link>
+          <Link to="Projects" smooth={true} duration={500}>Projects</Link>
+        </div>
       </header>
 
 
@@ -176,9 +183,6 @@ function App() {
       </Element>
 
 
-
-
-
       <Element name="skills" className="full-screen-section" id="skills-section" style={{ backgroundColor: '#141414' }}>
         <h2 style={{ textAlign: 'center', color: 'white'}}>SKILLS</h2>
         <div
@@ -189,11 +193,18 @@ function App() {
       </Element>
 
 
+      <Element name="work-experience">
+        <div>
+          <JobsSection /> 
+        </div>
+      </Element>
 
 
 
-      <Element name="Projects (Being updated)" className="full-screen-section" id="projects-section">
-        <h2 style={{ textAlign: 'center' }}>Projects</h2>
+
+
+      <Element name="Projects" className="full-screen-section" id="projects-section">
+        <h2 style={{ textAlign: 'center' }}>Still working on the site :)</h2>
         <Router>
           <Routes>
             <Route path="/" element={<ProjectsPage />} />
@@ -213,7 +224,3 @@ function App() {
 }
 
 export default App;
-
-
-
-
