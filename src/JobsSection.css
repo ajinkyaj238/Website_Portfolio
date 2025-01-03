@@ -40,7 +40,7 @@
 /* Alternate alignment for job entries */
 .job-entry:nth-child(odd) {
     align-self: flex-start; /* Align odd entries to the left */
-    text-align: left; /* Align text to the left */
+    text-align: justify; /* Align text to the left */
 }
 
 .job-entry:nth-child(even) {

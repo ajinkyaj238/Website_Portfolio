@@ -5,11 +5,7 @@ import SkillsPage from './SkillsPage';
 import AboutPage from './AboutPage';
 import JobsSection from './JobsSection'; // Import the JobsSection component
 
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ProjectsPage from './ProjectsPage';
-import ProjectOne from './Projects/ProjectOne';
-import ProjectTwo from './Projects/ProjectTwo';
-import ProjectThree from './Projects/ProjectThree';
 
 
 
@@ -204,15 +200,9 @@ function App() {
 
 
       <Element name="Projects" className="full-screen-section" id="projects-section">
-        <h2 style={{ textAlign: 'center' }}>Still working on the site :)</h2>
-        <Router>
-          <Routes>
-            <Route path="/" element={<ProjectsPage />} />
-            <Route path="/project-one" element={<ProjectOne />} />
-            <Route path="/project-two" element={<ProjectTwo />} />
-            <Route path="/project-three" element={<ProjectThree />} />
-          </Routes>
-        </Router>
+       <div>
+          <ProjectsPage />
+       </div>
       </Element>
 
 
