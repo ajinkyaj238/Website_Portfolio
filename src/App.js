@@ -146,6 +146,9 @@ function App() {
           <a href="https://www.linkedin.com/in/ajinkya-joshi-01b1a8246/" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-linkedin"></i>
           </a>
+          <a href="https://drive.google.com/file/d/1Li64q8QpOIc69N8I874G5vkZ7mKhvs0-/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+            <i className="fas fa-file-alt"></i>
+          </a>
         </div>
         <div>
           <Link to="about" smooth={true} duration={500}>Me</Link>
