@@ -10,6 +10,8 @@ import ProjectsPage from './ProjectsPage';
 
 
 function App() {
+
+
   useEffect(() => {
     // Firework setup code (unchanged)
     const brd = document.createElement("DIV");
@@ -133,9 +135,11 @@ function App() {
 
   }, []);
 
+
+
+  
   return (
     <div className="Ajinkya's_Website">
-
 
 
       <header>
@@ -158,8 +162,6 @@ function App() {
         </div>
       </header>
 
-
-      
       <div className="Front-Website-Header">
         <p>Hi, I'm Ajinkya Joshi! <span className="wave">👋</span></p>
         <p className="main-subtext1">I'm a combined Electrical and Computer Engineering Senior at Northeastern University</p>
@@ -173,14 +175,11 @@ function App() {
         <div id="board"></div>
       </div>
 
-
-
       <Element name="about" className="full-screen-section" id="skills-section" style={{ backgroundColor: '#141414' }}>
         <div>
           <AboutPage />
         </div>
       </Element>
-
 
       <Element name="skills" className="full-screen-section" id="skills-section" style={{ backgroundColor: '#141414' }}>
         <h2 style={{ textAlign: 'center', color: 'white'}}>SKILLS</h2>
@@ -191,24 +190,17 @@ function App() {
         </div>
       </Element>
 
-
       <Element name="work-experience">
         <div>
           <JobsSection /> 
         </div>
       </Element>
 
-
-
-
-
-      <Element name="Projects" className="full-screen-section" id="projects-section">
+      <Element name="Projects" className="full-screen-section" style={{ backgroundColor: 'rgb(3, 20, 34)'}}>
        <div>
           <ProjectsPage />
        </div>
       </Element>
-
-
 
 
 

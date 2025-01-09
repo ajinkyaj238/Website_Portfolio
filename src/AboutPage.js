@@ -44,7 +44,7 @@ const AboutPage = () => {
                     <strong>Northeastern University</strong> - Boston, MA<br />
                     <strong>Degree:</strong> BSEE Electrical and Computer Engineering<br />
                     <strong>Graduating:</strong> May, 2025.<br />
-                    <strong>Relevant Coursework:</strong> HW-SW Codesign for FPGA-Based Systems, Computer Architecture, Digital Design & Computer Organization, Electronic Design, Electronics, Linear Systems, Electromagnetics, Networks, Engineering Algorithms, Embedded Design, Circuits and Signals, and Discrete Structures.<br />
+                    <strong>Relevant Coursework:</strong> High Performance Computing, HW-SW Codesign for FPGA-Based Systems, Computer Architecture, Digital Design & Computer Organization, Electronic Design, Electronics, Linear Systems, Electromagnetics, Networks, Engineering Algorithms, Embedded Design, Circuits and Signals, and Discrete Structures.<br />
                     <strong>Interests:</strong> Hardware and Software Design, Semiconductors and Micromachining, Signal Processing and Analysis<br />
                     <strong>Extracurriculars:</strong> Northeastern IEEE Treasurer. 
                 </p>

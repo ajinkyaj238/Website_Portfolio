@@ -8,10 +8,10 @@ const JobsSection = () => {
             position: 'Developer for Sectoral Stress',
             duration: 'July 2024 - January 2025',
             description: [
-                'Developed and maintained web applications using React and Node.js.',
-                'Collaborated with cross-functional teams to define, design, and ship new features.',
-                'Optimized applications for maximum speed and scalability.',
-                'Implemented responsive design and ensured cross-browser compatibility.'
+                'Collaborated with professors to validate mathematical models of sectoral stress using MATLAB to identify financial contagion to better understand systemic risk from contemporary research.',
+                'Designed and developed a foundational full-stack webapp to compute and display financial stress, laying the groundwork for future lab projects.',
+                'Built a React front-end with interactive visualizations using Chart.js and a Python Flask back-end with PostgreSQL and MongoDB databases.',
+                'Automated data collection and processing pipelines using Python scripts, integrating them into the Python Flask back-end for seamless execution of data retrieval, transformation, and storage operations.',
             ]
         },
         {
